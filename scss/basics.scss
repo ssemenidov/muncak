@@ -29,3 +29,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.section {
+  &-header {
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+    &__h2 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 50px;
+      color: #263238;
+      max-width: 25em;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+    }
+  }
+}

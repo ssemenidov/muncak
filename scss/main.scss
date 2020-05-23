@@ -1,3 +1,29 @@
 @import "basics";
 @import "header";
 @import "posts";
+.stat {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 403px;
+    &__p {
+      font-weight: 400;
+      color: #263238;
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 0.5em;
+    }
+    &__num {
+      font-weight: 700;
+      color: #1a56a3;
+      font-size: 2em;
+    }
+  }
+}
