@@ -1,6 +1,9 @@
 .land {
   background: url(../img/bg.jpeg) no-repeat center top;
-  height: 1080px;
+  &-main {
+    padding-bottom: 15em;
+  }
+
   &-content {
     max-width: 410px;
     display: flex;
@@ -8,7 +11,7 @@
     justify-content: space-around;
     align-items: flex-start;
     height: 450px;
-    margin-top: 150px;
+    margin-top: 6em;
     &__h1 {
       font-size: 3rem;
       line-height: 60px;
@@ -36,6 +39,20 @@
       color: #2870db;
       background-color: #fbfcfc;
       transition: 0.5s;
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    &-main {
+      padding-bottom: 6em;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &-content {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-main {
+      padding-bottom: 3em;
     }
   }
 }

@@ -8,9 +8,11 @@ li {
 a {
   text-decoration: none;
 }
+html {
+  font-style: 16px;
+}
 body {
   font-family: "Open Sans";
-  font-size: 18px;
   height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
@@ -24,11 +26,34 @@ body {
   width: 60%;
   margin: 0 auto;
 }
-
-.content {
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 1680px) {
+  .container {
+    width: 80%;
+  }
+  .container--main {
+    width: 72%;
+  }
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+  .container--main {
+    width: 78%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .container--main {
+    width: 90%;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+
 .section {
   &-header {
     display: flex;
