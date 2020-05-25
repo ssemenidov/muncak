@@ -4,6 +4,25 @@
 @import "posts";
 @import "stat";
 @import "news";
+footer {
+  background-image: url(../img/Ellipse-footer.png);
+}
+.footer {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    max-width: 240px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    &__h3 {
+      text-transform: uppercase;
+    }
+  }
+}
 .subscribe {
   border-radius: 20px;
   filter: drop-shadow(0px 42px 17.5px rgba(31, 110, 227, 0.15));
