@@ -11,10 +11,12 @@
     justify-content: space-between;
     max-width: 500px;
     width: 100%;
+    align-items: center;
     &__link {
-      font-weight: 400;
+      font-weight: 500;
       color: #ffffff;
       font-size: 1.25rem;
+      line-height: 1em;
     }
   }
 }
@@ -29,15 +31,24 @@
     color: #2870db;
   }
 }
+@media screen and (max-width: 1440px) {
+  .header-nav__link {
+    border-radius: 10px;
+    background-color: #2870db;
+    padding: 0.5em 1em;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .header-nav {
+    justify-content: space-evenly;
+  }
   .header-content {
     flex-direction: column;
 
     align-items: center;
   }
-  .header-nav__link {
-    color: #2870db;
-  }
+
   .logo {
     margin-bottom: 1em;
   }
