@@ -11,6 +11,9 @@ a {
 html {
   font-size: 16px;
 }
+:focus {
+  outline: none;
+}
 body {
   font-family: "Open Sans";
   height: 100vh;
