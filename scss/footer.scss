@@ -1,0 +1,132 @@
+footer {
+  background: url(../img/Ellipse-footer.png) top center;
+}
+.footer {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+  }
+  &-item {
+    max-width: 240px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding: 0 0.5em;
+    &__h3 {
+      text-transform: uppercase;
+      margin: 2em 0;
+    }
+    &-list {
+      line-height: 2em;
+    }
+    &__p {
+      margin-top: 2em;
+      a {
+        color: #00aeff;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    &-item-content {
+      display: none;
+    }
+    &-item__h3:active {
+      transition: 3s;
+      ~ div {
+        display: inline;
+        transition: 3s;
+      }
+    }
+    &-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.subscribe {
+  border-radius: 20px;
+  filter: drop-shadow(0px 42px 17.5px rgba(31, 110, 227, 0.15));
+  background-color: #3072c0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 3em;
+  margin-bottom: 1em;
+
+  &__h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  @media screen and (max-width: 768px) {
+    &__h2 {
+      font-size: 2rem;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 599px;
+    width: 100%;
+    margin-top: 3em;
+  }
+  &__input {
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-weight: 400;
+    color: #546e7a;
+    border: none;
+    width: 100%;
+    padding: 1em 1.5em;
+    margin: 1em 0;
+    font-size: 1.5rem;
+  }
+  &__btn {
+    border-radius: 40px;
+    -webkit-filter: drop-shadow(0px 22px 12px rgba(17, 83, 165, 0.21));
+    filter: drop-shadow(0px 22px 12px rgba(17, 83, 165, 0.21));
+    background-color: #00aeff;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #fbfcfc;
+    margin-top: 4em;
+    border: 5px solid #00aeff;
+    padding: 1em 2.5em;
+  }
+  &__btn:hover {
+    color: #00aeff;
+    background-color: #fbfcfc;
+    transition: 0.5s;
+  }
+}
+.copy {
+  padding-bottom: 3em;
+}
+.networks {
+  &-list {
+    display: flex;
+  }
+  @media screen and (max-width: 1024px) {
+    &-list {
+      justify-content: center;
+    }
+  }
+
+  &-item {
+    background: url(../img/Ellipse.png) center;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5em;
+  }
+  &__img {
+    border-radius: 23px;
+  }
+}
