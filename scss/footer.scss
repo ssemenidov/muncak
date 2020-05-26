@@ -14,9 +14,10 @@ footer {
     letter-spacing: 2px;
     color: #ffffff;
     padding: 0 0.5em;
+    width: 20%;
     &__h3 {
       text-transform: uppercase;
-      margin: 2em 0;
+      margin: 1em 0;
     }
     &-list {
       line-height: 2em;
@@ -29,8 +30,14 @@ footer {
     }
   }
   @media screen and (max-width: 1024px) {
+    &-item {
+      width: 100%;
+    }
     &-item-content {
       display: none;
+    }
+    &-item__h3 {
+      text-align: center;
     }
     &-item__h3:active {
       transition: 3s;
@@ -38,6 +45,11 @@ footer {
         display: inline;
         transition: 3s;
       }
+    }
+
+    &-item-item,
+    &-item__p {
+      text-align: center;
     }
     &-list {
       flex-direction: column;
@@ -54,7 +66,7 @@ footer {
   justify-content: space-around;
   flex-direction: column;
   padding: 3em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 
   &__h2 {
     font-weight: 600;
