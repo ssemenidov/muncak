@@ -12,6 +12,7 @@ a {
 }
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 :focus {
   outline: none;
@@ -21,6 +22,7 @@ body {
   height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 .container {
   width: 70%;
@@ -35,6 +37,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 5em 0;
+
     &__h2 {
       font-weight: 700;
       font-size: 2.5rem;
