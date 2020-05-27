@@ -40,6 +40,9 @@
       background-color: #fbfcfc;
       transition: 0.5s;
     }
+    &__btn:active {
+      filter: none;
+    }
   }
   @media screen and (max-width: 1440px) {
     &-main {
