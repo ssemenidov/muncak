@@ -12,6 +12,9 @@
     align-items: flex-start;
     height: 450px;
     margin-top: 6em;
+    opacity: 1;
+    transform: translate(0);
+    animation: landContent 2s forwards;
     &__h1 {
       font-size: 3rem;
       line-height: 60px;
@@ -62,5 +65,15 @@
     &-main {
       padding-bottom: 3em;
     }
+  }
+}
+@keyframes landContent {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
