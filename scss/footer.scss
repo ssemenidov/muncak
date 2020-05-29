@@ -39,7 +39,7 @@ footer {
       }
       &-content {
         overflow: hidden;
-        transition: max-height 1s ease-in;
+        transition: max-height 0.6s ease-in-out;
         height: auto;
         max-height: 0;
       }
