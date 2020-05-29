@@ -22,7 +22,7 @@ footer {
       margin: 1em 0;
     }
     &-content--active {
-      max-height: 600px !important;
+      animation: footer-content-active 0.6s ease-in-out forwards !important;
     }
     &-list {
       line-height: 2em;
@@ -39,7 +39,7 @@ footer {
       }
       &-content {
         overflow: hidden;
-        transition: max-height 0.6s ease-in-out;
+        animation: footer-content 0.6s ease-in-out forwards;
         height: auto;
         max-height: 0;
       }
@@ -183,5 +183,25 @@ footer {
   100% {
     opacity: 0;
     overflow: hidden;
+  }
+}
+@keyframes footer-content {
+  from {
+    max-height: 600px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+@keyframes footer-content-active {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 600px;
+    opacity: 1;
   }
 }
