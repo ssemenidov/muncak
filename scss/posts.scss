@@ -26,10 +26,11 @@
     box-shadow: 1px 20px 50px rgba(32, 94, 171, 0.2);
     background-color: #ffffff;
     padding: 3.5em;
-    max-width: 380px;
+    max-width: 24em;
     width: -webkit-fill-available;
     margin: 2em 0;
     transition: 0.3s ease-in-out;
+    box-sizing: content-box;
     &__h3 {
       font-weight: 700;
       font-size: 1.5rem;
@@ -37,7 +38,7 @@
     }
     &__p {
       color: #2d2058;
-      line-height: 2.75rem;
+      line-height: 2.5rem;
       font-weight: 400;
     }
   }

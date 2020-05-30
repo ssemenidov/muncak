@@ -1,5 +1,5 @@
 .header {
-  padding-top: 5rem;
+  padding-top: 4.5rem;
 
   &-content {
     display: flex;
@@ -15,13 +15,12 @@
     &__link {
       font-weight: 500;
       color: #ffffff;
-      font-size: 1.25rem;
-      line-height: 1em;
+      font-size: 1rem;
     }
   }
 }
 .logo {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 
   font-weight: 700;
   text-align: right;
