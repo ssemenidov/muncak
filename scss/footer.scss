@@ -20,6 +20,7 @@ footer {
     &__h3 {
       text-transform: uppercase;
       margin: 1em 0;
+      cursor: pointer;
     }
     &-content--active {
       animation: footer-content-active 0.6s ease-in-out forwards !important;
