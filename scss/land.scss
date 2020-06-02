@@ -5,12 +5,13 @@
   }
 
   &-content {
-    max-width: 410px;
+    max-width: 22em;
+    box-sizing: content-box;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    height: 450px;
+    height: 25em;
     margin-top: 5em;
     opacity: 1;
     transform: translate(0);
@@ -65,6 +66,7 @@
       box-shadow: 1px 20px 50px rgba(32, 94, 171, 0.2);
       background-color: #ffffff;
       padding: 2.5em;
+      height: min-content;
     }
     &-main {
       padding-bottom: 3em;
